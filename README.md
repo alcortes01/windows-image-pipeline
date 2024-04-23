@@ -3,13 +3,13 @@ Pipeline to create Windows images with each process involved.
 
 ```mermaid
 sequenceDiagram
-    participant Image_Creator as "Image Creator"
+    participant Image_Creator as "Pipeline Image Creator"
     participant Windows_ISO as "Windows ISO"
     participant Organization_Tools as "Organization Tools"
     participant Software_Repository as "Software Repository"
     participant Security_Hardening as "Security Hardening"
     participant Image_Repository as "Image Repository"
-    participant VDI_Teams as "VDI Teams (Citrix, VMWare, ESXi)"
+    participant VDI_Teams as "Ops Teams (Citrix, Horizon, ESXi)"
     participant CI_CD_Tool as "CI/CD Tool"
 
     Image_Creator->>CI_CD_Tool: Trigger CI/CD Pipeline
